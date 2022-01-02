@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Licorice&family=Sacramento&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #7f1d1d;
+  --green: #064e3b;
+  --light-green: #dcfce7;
+  --light-red: #fee2e2;
+}
+body {
+  font-family: inter, sans-serif;
+}
+.container {
+  background-color: #dfe1e6;
+  margin: 0 auto;
+  max-width: 768px;
+  padding: 1rem;
+}
+
+h1 {
+  font-family: Sacramento;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.green {
+  background-color: #86efac;
+  color: #064e3b;
+}
+.balance {
+  background-color: black;
+  color: white;
+}
+.red {
+  background-color: #fca5a5;
+  color: #7f1d1d;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 0.5rem;
+  gap: 1rem;
+}
+
+.bal-container {
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 102rem;
+}
+
+.bal-container span {
+  font-size: 1.2rem;
+}
+.bal-container .amount {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.form-container,
+.transaction-container {
+  padding: 1.2rem 0.75rem;
+}
+.form-container form {
+  display: flex;
+  gap: 1rem;
+}
+
+form select,
+form input {
+  padding: 0.5rem;
+  outline: none;
+  border-radius: 5px;
+  border: 0.5px solid;
+}
+form select:focus,
+form input:focus {
+  outline-offset: 2px;
+  outline: 1px solid;
+}
+form input {
+  width: 100%;
+}
+
+#description {
+  width: 140rem;
+}
+
+.expenseb form select,
+.expenseb form input {
+  color: var(--red);
+  border-color: var(--red);
+  background-color: var(--light-red);
+}
+.incomeb form select,
+.incomeb form input {
+  color: var(--green);
+  border-color: var(--green);
+  background-color: var(--light-green);
+}
+
+h2 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.incomec {
+  background-color: var(--light-green);
+  color: var(--green);
+  border-color: var(--green);
+}
+.expensec {
+  background-color: var(--light-red);
+  color: var(--red);
+  border-color: var(--red);
+}
+.tran-cont {
+  padding: 0.5rem;
+}
+.list {
+  border: 1px solid;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.list button {
+  border: none;
+  border-radius: 2%;
+  padding: 0.2rem;
+  background-color: inherit;
+  cursor: pointer;
+  color: inherit;
+  font-size: 1.2rem;
+}
+
+.list .desc {
+  width: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 80%;
+  }
+  #description {
+    width: 20rem;
+  }
+  #value {
+    width: 8rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 70%;
+  }
+  #description {
+    width: 12rem;
+  }
+  #value {
+    width: 7rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  html {
+    font-size: 65%;
+  }
+  #description {
+    width: 8rem;
+  }
+  #value {
+    width: 5rem;
+  }
+}

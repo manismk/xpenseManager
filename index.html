@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xpense Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a7cc7f5314.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Xpense Manager</h1>
+      </header>
+      <hr />
+      <main>
+        <div class="main-container">
+          <div class="balance bal-container">
+            <span>Balance:</span>
+            <span id="balance" class="amount">0</span>
+          </div>
+          <div class="green bal-container">
+            <span>Income:</span>
+            <span id="income" class="amount">0</span>
+          </div>
+          <div class="red bal-container">
+            <span>Expense:</span>
+            <span id="expense" class="amount">0</span>
+          </div>
+        </div>
+        <hr />
+        <div class="incomeb form-container">
+          <form id="transaction-form">
+            <select name="choice" id="choice">
+              <option value="income">+</option>
+              <option value="expense">-</option>
+            </select>
+            <input
+              type="text"
+              name="description"
+              id="description"
+              placeholder="Enter Description Here"
+              required
+            />
+            <input
+              type="number"
+              name="value"
+              id="value"
+              placeholder="Value"
+              required
+              min="0.01"
+              step="0.01"
+            />
+            <input type="submit" value="Add" />
+          </form>
+        </div>
+        <hr />
+        <div class="transaction-container">
+          <h2>Your Transaction</h2>
+          <div class="tran-cont">
+            <!-- <div class="list incomec">
+              <p class="desc">Sample description</p>
+              <p class="liamount">28000</p>
+              <button><i class="fas fa-times"></i></button>
+            </div>
+            <div class="list expensec">
+              <p class="desc">Sample description</p>
+              <p class="liamount">28000</p>
+              <button><i class="fas fa-times"></i></button>
+            </div> -->
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
