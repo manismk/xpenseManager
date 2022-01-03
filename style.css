@@ -16,10 +16,11 @@ body {
   font-family: inter, sans-serif;
 }
 .container {
-  background-color: #dfe1e6;
-  margin: 0 auto;
+  border: 1px solid black;
+  margin: 3rem auto;
   max-width: 768px;
   padding: 1rem;
+  border-radius: 15px;
 }
 
 h1 {
@@ -63,10 +64,13 @@ h1 {
   font-size: 1.3rem;
   font-weight: 700;
 }
-.form-container,
-.transaction-container {
+.form-container {
   padding: 1.2rem 0.75rem;
 }
+.transaction-container {
+  padding: 1.2rem 0.75rem 0.5rem 0.75rem;
+}
+
 .form-container form {
   display: flex;
   gap: 1rem;
@@ -146,6 +150,10 @@ h2 {
   font-size: 1.2rem;
 }
 
+.list:last-child {
+  margin-bottom: 0rem;
+}
+
 .list .desc {
   width: 80%;
 }
@@ -184,4 +192,33 @@ h2 {
   #value {
     width: 5rem;
   }
+}
+
+button {
+  outline: none;
+}
+.incomec button:focus {
+  outline: 1px var(--green) solid;
+}
+.expensec button:focus {
+  outline: 1px var(--red) solid;
+}
+
+#footer {
+  text-align: center;
+}
+
+#footer a {
+  outline: none;
+  color: blue;
+  text-decoration: none;
+}
+
+#footer a:focus,
+#footer a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: 1px solid black;
 }
